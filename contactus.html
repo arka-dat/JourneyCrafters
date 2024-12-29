@@ -1,0 +1,234 @@
+<link rel="icon" href="IMG-20241222-WA0009.png" type="image/x-icon">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | JourneyCrafters</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff7c;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    /* Header Section */
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    header nav a {
+      color: #fff;
+      font-size: 16px;
+      padding: 5px 10px;
+    }
+
+    header nav a:hover {
+      background: #ff6b6b;
+      border-radius: 5px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('Contact-Us-1.jpg') no-repeat center center/cover;
+      height: 40vh;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact p {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #666;
+    }
+
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .contact-form,
+    .contact-details {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      padding: 10px;
+      background: #ff6b6b;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #e14e4e;
+    }
+
+    .contact-details ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-details li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .contact-details li i {
+      font-size: 20px;
+      color: #ff6b6b;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ff6b6b;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">JourneyCrafters</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="#">Tour Packages</a></li>
+        <li><a href="flights.html">Flights</a></li>
+        <li><a href="redirectirctc.html">Trains</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <div class="active">
+          <a href="login.html" style="color: #ffffff;">
+            <img src="icon.png" alt="Account Icon" style="height: 20px; width: 20px;">
+          </a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1></h1>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <p>We’re here to help you plan your perfect journey. Reach out to us with any questions!</p>
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <!-- Contact Details -->
+      <div class="contact-details">
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Wanderlust City, USA</li>
+          <li><i class="fas fa-phone-alt"></i> +1 234 567 890</li>
+          <li><i class="fas fa-envelope"></i> contact@journeycrafters.com</li>
+          <li><i class="fas fa-clock"></i> Mon-Fri: 9am - 6pm</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© JourneyCrafters. All rights reserved. <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <!-- Icons Library (Optional for Icons) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

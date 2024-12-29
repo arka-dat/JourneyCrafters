@@ -1,0 +1,225 @@
+<link rel="icon" href="IMG-20241222-WA0009.png" type="image/x-icon">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popular Travel Destinations | JourneyCrafters</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #80f7e793;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    /* Header Section */
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    header nav a {
+      color: #fff;
+      font-size: 16px;
+      padding: 5px 10px;
+    }
+
+    header nav a:hover {
+      background: #ff6b6b;
+      border-radius: 5px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('pexels-souvenirpixels-417074.jpg') no-repeat center center/cover;
+      height: 60vh;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    /* Destinations Section */
+    .destinations {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .destinations h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .destination-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .destination-card {
+      width: 300px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .destination-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .destination-card h3 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .destination-card p {
+      padding: 0 15px 15px;
+      font-size: 14px;
+    }
+
+    .destination-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ff6b6b;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">JourneyCrafters</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="#">Tour Packages</a></li>
+        <li><a href="flights.html">Flights</a></li>
+        <li><a href="redirectirctc.html">Trains</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <div class="active">
+          <a href="login.html" style="color: #ffffff;">
+            <img src="icon.png" alt="Account Icon" style="height: 20px; width: 20px;">
+          </a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Popular Travel Destinations</h1>
+      <p>Explore the most iconic and breathtaking places around the globe.</p>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section class="destinations">
+    <h2>Discover the World</h2>
+    <div class="destination-grid">
+      <!-- Destination Card -->
+      <div class="destination-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/640px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" alt="Paris, France">
+        <h3>Paris, France</h3>
+        <p>The city of love, home to the Eiffel Tower and timeless art.</p>
+      </div>
+      <div class="destination-card">
+        <img src="https://static.independent.co.uk/2024/01/07/11/3-4-scaled.png" alt="Maldives">
+        <h3>Maldives</h3>
+        <p>Crystal-clear waters and luxurious overwater bungalows await you.</p>
+      </div>
+      <div class="destination-card">
+        <img src="https://plus.unsplash.com/premium_photo-1661914240950-b0124f20a5c1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG9reW98ZW58MHx8MHx8fDA%3D" alt="Tokyo, Japan">
+        <h3>Tokyo, Japan</h3>
+        <p>A perfect blend of tradition and futuristic technology.</p>
+      </div>
+      <div class="destination-card">
+        <img src="https://image.cnbcfm.com/api/v1/image/106268734-1574876711571gettyimages-1059614218.jpeg?v=1576856860" alt="New York, USA">
+        <h3>New York, USA</h3>
+        <p>The city that never sleeps, with iconic landmarks and culture.</p>
+      </div>
+      <div class="destination-card">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/cf/69/07/sydney-harbour.jpg?w=900&h=500&s=1" alt="Sydney, Australia">
+        <h3>Sydney, Australia</h3>
+        <p>Home to the Sydney Opera House and beautiful beaches.</p>
+      </div>
+      <div class="destination-card">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*gfzxEKbwzFDI8L-h2FQSrw.jpeg" alt="Rome, Italy">
+        <h3>Rome, Italy</h3>
+        <p>Experience ancient history and Italian charm in the Eternal City.</p>
+      </div>
+      <div class="destination-card">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2e/1e/cape-town.jpg?w=1400&h=1400&s=1" alt="Cape Town, South Africa">
+        <h3>Cape Town, South Africa</h3>
+        <p>Stunning landscapes with a mix of mountains and beaches.</p>
+      </div>
+      <div class="destination-card">
+        <img src="https://149990825.v2.pressablecdn.com/wp-content/uploads/2023/09/Rio-752x630.jpg" alt="Rio de Janeiro, Brazil">
+        <h3>Rio de Janeiro, Brazil</h3>
+        <p>Famous for its vibrant culture, beaches, and the Christ the Redeemer statue.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© JourneyCrafters. All rights reserved. <a href="#">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>

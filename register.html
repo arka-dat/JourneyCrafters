@@ -1,0 +1,63 @@
+<link rel="icon" href="IMG-20241222-WA0009.png" type="image/x-icon">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page | JourneyCrafters</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background: url('pexels-eberhardgross-1367192.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-white text-2xl font-bold mb-6 text-center">Register</h1>
+        <form>
+            <div class="mb-4">
+                <label class="block text-gray-300 text-sm mb-2" for="name">Enter your name</label>
+                <input class="w-full px-3 py-2 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-300 text-sm mb-2" for="email">Enter your email</label>
+                <input class="w-full px-3 py-2 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-4 relative">
+                <label class="block text-gray-300 text-sm mb-2" for="password">Enter your password</label>
+                <input class="w-full px-3 py-2 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="password" id="password" placeholder="Enter your password">
+                <button type="button" class="absolute inset-y-0 right-0 px-3 py-2 text-gray-500" onclick="togglePassword('password')">
+                    <i id="password-icon" class="fas fa-eye"></i>
+                </button>
+            </div>
+            <div class="mb-4 relative">
+                <label class="block text-gray-300 text-sm mb-2" for="confirm-password">Confirm your password</label>
+                <input class="w-full px-3 py-2 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="password" id="confirm-password" placeholder="Confirm your password">
+                <button type="button" class="absolute inset-y-0 right-0 px-3 py-2 text-gray-500" onclick="togglePassword('confirm-password')">
+                    <i id="confirm-password-icon" class="fas fa-eye"></i>
+                </button>
+            </div>
+            <button class="w-full bg-white text-black py-2 rounded-lg font-semibold hover:bg-gray-200">Register</button>
+        </form>
+        <p class="text-gray-300 text-center mt-6">Already have an account? <a href="login.html" class="text-blue-500 hover:underline">Log In</a></p>
+    </div>
+
+    <script>
+        function togglePassword(fieldId) {
+            const field = document.getElementById(fieldId);
+            const icon = document.getElementById(fieldId + '-icon');
+            if (field.type === 'password') {
+                field.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                field.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        }
+    </script>
+</body>
+</html>
